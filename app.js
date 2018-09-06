@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var allURL = []
     const options = {
         headers: {
-            'Authorization': 'token 4ea959f4da33afac39af6552a90cb794cc68669b'
+            'Authorization': 'token bfba4e73c793c0d8c209bcbb6ab424a7d987e83b'
         }
     }
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return fetch(getUrl, options)
             .then(response => response.json())
             .then(repos => {createGitCard(repos) ; flipCard(repos)})   
-        }
+    }
     
     
     function createGitCard(repos){
@@ -56,15 +56,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var logbuttonIndex = function(buttonIndex) {
                 var favorites = allURL[buttonIndex]
                 var name = h2[buttonIndex].textContent
-            
-                localStorage.setItem( 'favorites', JSON.stringify(favorites))
-                localStorage.setItem( 'name', JSON.stringify(name))
-               
+                localStorage.setItem('favorites', favorites)
+                localStorage.setItem('name', name)
             }
            
             likeButton.forEach(function(button, index){
                 button.addEventListener('click', function(){
-                   logbuttonIndex(index)
+                    logbuttonIndex(index)
                    
                 })
             })    
@@ -80,10 +78,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 repo.firstElementChild.nextElementSibling.classList.toggle('flipped')
             }))
         })
-
-    }
-
-
-   
-    
+    } 
 })
