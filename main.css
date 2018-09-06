@@ -1,0 +1,190 @@
+/* h1, form, main{
+    text-align: center;
+}
+
+.flipped {
+    z-index: 2;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 .8vw rgb(255, 255, 255),
+    0 0 1.5vw rgb(255, 255, 255),
+    0 0 3.1vw  rgb(238, 162, 200),
+    0 0 5.5vw  rgb(255, 105, 180),
+    0 0 11.7vw rgb(255, 105, 180),
+    0 0 19.4vw rgb(255, 105, 180);
+}
+
+.clicked {
+    transform: rotateY(180deg);
+    transition: 500ms;
+}
+
+.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin: auto;
+}
+ */
+
+
+
+
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* app styling */
+
+header {
+
+    padding: 20px;
+}
+
+body {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    background-image:url("https://stmed.net/sites/default/files/smokey-wallpapers-25307-2203722.jpg");
+    background-attachment: fixed;
+   
+}
+
+
+h1 {
+    color:rgb(172, 4, 187);
+    font-size: 4vw;
+    text-shadow: rgb(51, 51, 51) .2vw .2vw .2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+div {
+    height: 55vh;
+    background: rgb(255, 255, 255);
+    width: 25vw;
+    margin: 1vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 40vh;
+    width: auto;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh 0vw;
+}
+
+h2, p {
+    padding: .75vw;
+}
+
+h2, h3 {
+    font-weight: 900;
+
+}
+
+p {
+    text-align: center;
+}
+
+.repo-card {
+    position: relative;
+}
+
+.front {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+}
+
+.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin: auto;
+}
+
+
+.front:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    box-shadow: 0 0 .8vw  rgb(162, 252, 255),
+    0 0 1.5vw rgb(115, 222, 226),
+    0 0 3.1vw  rgb(53, 160, 163),
+    0 0 5.5vw  rgb(30, 126, 129),
+    0 0 11.7vw rgb(19, 94, 97),
+    0 0 19.4vw rgb(17, 89, 92);
+}
+
+.clicked {
+    transform: rotateY(180deg);
+    transition: 500ms;
+}
+
+.flipped {
+    z-index: 2;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 .8vw rgb(162, 252, 255),
+    0 0 1.5vw rgb(115, 222, 226),
+    0 0 3.1vw  rgb(53, 160, 163),
+    0 0 5.5vw  rgb(30, 126, 129),
+    0 0 11.7vw rgb(19, 94, 97),
+    0 0 19.4vw rgb(17, 89, 92);
+}
+
+label {
+    font-size: 20px;
+    color: rgb(4, 146, 99);
+  
+
+}
+
+.yo {
+    color: white;
+}
+
+input {
+    color: white;
+}
